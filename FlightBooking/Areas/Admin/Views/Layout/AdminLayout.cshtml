@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+    @await Component.InvokeAsync("_AdminHeadComponentPartial")
+
+<body>
+    @await Component.InvokeAsync("_AdminSidebarComponentPartial")
+
+    @await Component.InvokeAsync("_AdminTopbarComponentPartial")
+
+    @RenderBody() // Bu kısım, Layout'a bağlı diğer sayfalardan gelen içeriğin yerleştirileceği ana bölümdür.
+
+</body>
+</html>
